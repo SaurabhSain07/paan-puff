@@ -72,7 +72,7 @@ class SignUpBottemsheet extends StatelessWidget {
                   child: Text(
                     AppString.alreadyhaveanaccount,
                     style:
-                      labelMedium(mColor: appColors.sOnDarkBackgroundColor),
+                      labelMedium(mColor: appColors.dPrimaryColor),
                   ),
                 ),
               ),

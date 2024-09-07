@@ -60,7 +60,7 @@ class SignInBottemsheet extends StatelessWidget {
                   child: Text(
                     AppString.forgotpassword,
                     style:
-                        labelMedium(mColor: appColors.sOnDarkBackgroundColor),
+                        labelMedium(mColor: appColors.dPrimaryColor),
                   ),
                 ),
               ),

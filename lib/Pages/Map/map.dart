@@ -1,9 +1,12 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
+import 'package:paan/Configur/Images.dart';
 import 'package:paan/Configur/apiKeys/mapApiKey.dart';
 import 'package:paan/Configur/color.dart';
 import 'package:paan/Configur/string.dart';
@@ -103,7 +106,7 @@ class _MapPageState extends State<MapPage> {
                     bottom: 0,
                     child: Container(
                       width: Get.width,
-                      height: Get.height*.35,
+                      height: Get.height*.38,
                     decoration: const BoxDecoration(
                       color: appColors.dOnBackgroundColor,
                             borderRadius: BorderRadius.only(
@@ -111,9 +114,99 @@ class _MapPageState extends State<MapPage> {
                                 topRight: Radius.circular(30)),
                                 ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(AppString.deliveringyourorderto, 
-                              style: headingMedium(),)
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20, top: 20),
+                                child: Text(AppString.deliveringyourorderto, 
+                                style: headingMedium(),),
+                              ),
+                             const SizedBox(height: 5,),
+                             const Divider(),
+                             
+                            const SizedBox(height: 15,),
+                             Center(
+                              child: Container(
+                                height: 130,
+                                margin:const EdgeInsets.symmetric(horizontal: 10),
+                                decoration: BoxDecoration(
+                                  border: Border.all(width: 1, color: appColors.tBorderColor),
+                                  borderRadius: BorderRadius.circular(20)
+                                ),
+                                child: Row(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(10),
+                                      child: SvgPicture.asset(AssetsImage.locationSvg),
+                                    ),
+
+                                    Container(
+                                      width: Get.width*.55,
+                                      margin:const EdgeInsets.symmetric(vertical: 15),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                          AppString.blockS,
+                                          style: headingMedium(
+                                              mFontWeight: FontWeight.w500),
+                                         ),
+
+                                         Text(
+                                          AppString.panchsheelParkSouth,
+                                          style: headingSmall(
+                                              mFontWeight: FontWeight.w400),
+                                         ),
+                                        ],
+                                      ),
+                                    ),
+                                    InkWell(
+                                      onTap: () {
+                                        
+                                      },
+                                      child: Container(
+                                        height: 45,
+                                        decoration: BoxDecoration(
+                                        border: Border.all(
+                                          width: 1,
+                                          color: appColors.tBorderColor,
+                                        ),
+                                       ),
+                                       child: Center(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10),
+                                          child: Text(
+                                            AppString.change,
+                                            style: headingSmallest(
+                                                mColor: appColors.dOnGreenColor),
+                                          ),
+                                        ),
+                                       ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                             ),
+                            
+                            const SizedBox(height: 20,),
+                             InkWell(
+                              child: Container(
+                                height: 55,
+                                margin:const EdgeInsets.symmetric(horizontal: 10),
+                                decoration: BoxDecoration(
+                                  color: appColors.dPrimaryColor,
+                                  borderRadius: BorderRadius.circular(15)
+                                ),
+                                child: Center(
+                                  child: Text(
+                                  AppString.confirmLocation,
+                                  style: headingMedium2(
+                                      mColor: appColors.dOnBackgroundColor),
+                                ),
+                                ),
+                              ),
+                             )
                             ],
                           ),      
                       ),

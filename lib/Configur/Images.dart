@@ -16,4 +16,5 @@ class AssetsImage{
   static const noEyeSvg="$iconsPath/no_eye.svg";
   static const cirleButtonSvg="$iconsPath/circleButton.svg";
   static const backCirleButtonSvg="$iconsPath/backCircle.svg";
+  static const locationSvg="$iconsPath/locationIcon.svg";
 }

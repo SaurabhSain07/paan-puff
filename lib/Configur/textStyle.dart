@@ -11,6 +11,15 @@ TextStyle headingLarge({Color mColor=Colors.black, FontWeight mFontWeight=FontWe
   );
 }
 
+TextStyle headingMedium2({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w600}){
+  return TextStyle(
+    fontFamily: "Poppins",
+    fontSize: 20,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
 TextStyle headingMedium({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w600}){
   return TextStyle(
     fontFamily: "Poppins",
@@ -24,6 +33,15 @@ TextStyle headingSmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWe
   return TextStyle(
     fontFamily: "Poppins",
     fontSize: 16,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
+TextStyle headingSmallest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w600}){
+  return TextStyle(
+    fontFamily: "Poppins",
+    fontSize: 15,
     color: mColor,
     fontWeight: mFontWeight,
   );
