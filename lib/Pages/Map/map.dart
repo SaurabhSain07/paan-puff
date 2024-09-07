@@ -12,6 +12,7 @@ import 'package:paan/Configur/color.dart';
 import 'package:paan/Configur/string.dart';
 import 'package:paan/Configur/textStyle.dart';
 import 'package:paan/Controller/mapController.dart';
+import 'package:paan/Widgets/CommanTextButton.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -160,53 +161,33 @@ class _MapPageState extends State<MapPage> {
                                         ],
                                       ),
                                     ),
-                                    InkWell(
-                                      onTap: () {
-                                        
-                                      },
-                                      child: Container(
-                                        height: 45,
-                                        decoration: BoxDecoration(
-                                        border: Border.all(
-                                          width: 1,
-                                          color: appColors.tBorderColor,
-                                        ),
-                                       ),
-                                       child: Center(
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(10),
-                                          child: Text(
-                                            AppString.change,
-                                            style: headingSmallest(
+                                    Container(
+                                      width: 80,
+                                      child: CommanTextButton(
+                                        Height: 45,
+                                        ontap: () {
+                                          
+                                        },
+                                        pedding: 0,
+                                        text: AppString.change,
+                                        textStyle: headingSmallest(
                                                 mColor: appColors.dOnGreenColor),
-                                          ),
                                         ),
-                                       ),
-                                      ),
-                                    )
+                                    ),
                                   ],
                                 ),
                               ),
                              ),
                             
                             const SizedBox(height: 20,),
-                             InkWell(
-                              child: Container(
-                                height: 55,
-                                margin:const EdgeInsets.symmetric(horizontal: 10),
-                                decoration: BoxDecoration(
-                                  color: appColors.dPrimaryColor,
-                                  borderRadius: BorderRadius.circular(15)
-                                ),
-                                child: Center(
-                                  child: Text(
-                                  AppString.confirmLocation,
-                                  style: headingMedium2(
-                                      mColor: appColors.dOnBackgroundColor),
-                                ),
-                                ),
-                              ),
-                             )
+                            CommanTextButton(
+                              ontap: () {
+                                Get.toNamed("/homePage");
+                              },
+                              buttonColor: appColors.dPrimaryColor,
+                              text: AppString.confirmLocation,
+                              textStyle: headingMedium2(
+                                      mColor: appColors.dOnBackgroundColor),),
                             ],
                           ),      
                       ),

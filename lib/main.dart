@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:paan/Pages/PagePaths.dart';
 import 'package:paan/Pages/SignIn/signIn.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      getPages: pagePaths,
       home: const SignInPage(),
     );
   }
