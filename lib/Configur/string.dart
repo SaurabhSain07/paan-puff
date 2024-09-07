@@ -16,4 +16,9 @@ class AppString{
   static const didntreceivedthecodeyet ="Didn't received the code yet?";
   static const resend="Resend";
   static const codeReceived="Code Received!";
+  static const deliveringyourorderto="Delivering your order to";
+  static const blockS ="Block S";
+  static const panchsheelParkSouth="Panchsheel Park South, Panchsheel Park, New Delhi";
+  static const change="Change";
+  static const confirmLocation="Confirm Location";
 }

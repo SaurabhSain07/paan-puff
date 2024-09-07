@@ -11,10 +11,10 @@ TextStyle headingLarge({Color mColor=Colors.black, FontWeight mFontWeight=FontWe
   );
 }
 
-TextStyle headingMedium({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w800}){
+TextStyle headingMedium({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w600}){
   return TextStyle(
     fontFamily: "Poppins",
-    fontSize: Get.width*.018,
+    fontSize: 18,
     color: mColor,
     fontWeight: mFontWeight,
   );
