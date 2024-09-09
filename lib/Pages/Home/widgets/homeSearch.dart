@@ -11,7 +11,7 @@ class HomeSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: Get.width * .75,
+      width: Get.width * .7,
       child: Commantextfield(
         borderRadius: 30,
         picon: const Icon(

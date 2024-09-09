@@ -28,5 +28,10 @@ class AppString{
   static const favourite="Favourite :";
   static const cigarettes="Cigarettes";
   static const search="Search :";
-  // static const favourite="Favourite :";
+  static const exploreCategories="Explore Categories";
+  static const smokingAccessories="Smoking Accessories";
+  static const energyDrinks="Energy Drinks";
+  static const freshners="Freshners";
+  static const mostPopular="Most Popular";
+  static const brandName="Brand Name";
 }

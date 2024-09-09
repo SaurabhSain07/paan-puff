@@ -119,6 +119,15 @@ TextStyle labelSmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWeig
   );
 }
 
+TextStyle labelSmallest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
+  return TextStyle(
+    fontFamily: "Poppins",
+    fontSize: 8,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
 TextStyle interlabelSmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
   return TextStyle(
     fontFamily: "Inter",

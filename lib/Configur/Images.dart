@@ -11,6 +11,13 @@ class AssetsImage{
   static const cloudShedowImage="$imagesPath/cloudShedow.png";
   static const well1Image="$imagesPath/well1.png";
   static const leftWellImage="$imagesPath/left well.png";
+  static const scootyImage="$imagesPath/scooty.png";
+  static const aeroButtonImage="$imagesPath/aeroButton.png";
+  static const hokerImage="$imagesPath/hoker.png";
+  static const cigratessImage="$imagesPath/cigratess.png";
+  static const enrgyDrinkImage="$imagesPath/enrgyDrink.png";
+  static const smokingImage="$imagesPath/smoking.png";
+  static const freserImage="$imagesPath/freser.png";
   
   // svg Icons
   static const noEyeSvg="$iconsPath/no_eye.svg";
