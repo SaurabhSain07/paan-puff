@@ -74,6 +74,24 @@ TextStyle bodySmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWeigh
   );
 }
 
+TextStyle bodySmallest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
+  return TextStyle(
+    fontFamily: "Poppins",
+    fontSize: 23,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
+TextStyle labelLargest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
+  return TextStyle(
+    fontFamily: "Poppins",
+    fontSize: 20,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
 TextStyle labelLarge({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
   return TextStyle(
     fontFamily: "Poppins",
@@ -96,6 +114,33 @@ TextStyle labelSmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWeig
   return TextStyle(
     fontFamily: "Poppins",
     fontSize: 12,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
+TextStyle interlabelSmall({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: 12,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
+TextStyle interlabelSmallest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w500,}){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: 10,
+    color: mColor,
+    fontWeight: mFontWeight,
+  );
+}
+
+TextStyle interlabelLargest({Color mColor=Colors.black, FontWeight mFontWeight=FontWeight.w600,}){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: 20,
     color: mColor,
     fontWeight: mFontWeight,
   );

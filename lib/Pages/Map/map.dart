@@ -171,7 +171,7 @@ class _MapPageState extends State<MapPage> {
                                         pedding: 0,
                                         text: AppString.change,
                                         textStyle: headingSmallest(
-                                                mColor: appColors.dOnGreenColor),
+                                            mColor: appColors.dOnGreenColor),
                                         ),
                                     ),
                                   ],

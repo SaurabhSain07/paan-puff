@@ -7,22 +7,41 @@ class Commantextfield extends StatelessWidget {
   final TextStyle? textStyle;
   final Icon? icon;
   final SvgPicture? svgPicture;
+  final Icon? picon;
+  final SvgPicture? psvgPicture;
   final TextEditingController? controller;
+  final double? borderRadius;
   const Commantextfield(
-      {super.key, this.text, this.textStyle, this.icon, this.controller, this.svgPicture});
+      {super.key,
+      this.text,
+      this.textStyle,
+      this.icon,
+      this.controller,
+      this.svgPicture,
+      this.picon,
+      this.psvgPicture, this.borderRadius});
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      controller: controller,
-      style: textStyle,
-      decoration: InputDecoration(
-          hintText: text,
-          hintStyle: textStyle,
-          suffixIcon: svgPicture??icon,
-          border: OutlineInputBorder(
-            borderSide:const BorderSide(color: appColors.tBorderColor),
-              borderRadius: BorderRadius.circular(20))),
+    return Container(
+      height: 70,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(borderRadius?? 20),
+        border: Border.all(color: appColors.tBorderColor)
+      ),
+      child: TextField(
+        controller: controller,
+        style: textStyle,
+        // maxLines: 2,
+        decoration: InputDecoration(
+            hintText: text,
+            hintStyle: textStyle,
+            prefixIcon: psvgPicture??picon,
+            suffixIcon: svgPicture??icon,
+            border: InputBorder.none,
+            contentPadding:const EdgeInsets.all(25)
+            ),
+      ),
     );
   }
 }

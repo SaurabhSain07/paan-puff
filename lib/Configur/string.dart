@@ -21,4 +21,12 @@ class AppString{
   static const panchsheelParkSouth="Panchsheel Park South, Panchsheel Park, New Delhi";
   static const change="Change";
   static const confirmLocation="Confirm Location";
+  static const yourLocation="Your Location";
+  static const locationyour ="Sector 116, Noida - Rest of Noida, Delhi NCR";
+  static const goodeveningPiyush="Good evening! Piyush";
+  static const grabyour="Grab your";
+  static const favourite="Favourite :";
+  static const cigarettes="Cigarettes";
+  static const search="Search :";
+  // static const favourite="Favourite :";
 }
